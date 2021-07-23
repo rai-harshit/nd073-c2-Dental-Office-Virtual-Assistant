@@ -32,28 +32,28 @@ Copy and paste the Microsoft App ID and Microsoft App Password from the .env fil
 
 ### Demo
 
-The QnA maker is first used to create a Knowledge Base which can be then queried by the chatbot to provide answers to the FAQs.
-![qna-maker](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/knowledge_base.png)
+1. The QnA maker is first used to create a Knowledge Base which can be then queried by the chatbot to provide answers to the FAQs.
+![qna-maker](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/screenshots/knowledge_base.png)
 
-Next, we train a LUIS model to identify two intents:
-1. Get availability of slot
-2. Schedule an appointment
-![luis-intent](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/luis_get_availability.png)
+2. Next, we train a LUIS model to identify two intents:
+- Get availability of slot
+- Schedule an appointment
+![luis-intent](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/screenshots/luis_get_availability.png)
 
-The modified bot code can be seen in the screenshot attached below.
-![bot-code](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/bot_code.png)
+3. The modified bot code can be seen in the screenshot attached below.
+![bot-code](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/screenshots/bot_code.png)
 
-The bot can be then tested locally using the Microsoft Bot Framework Emulator as can be seen below.
-![bot-local](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/dova_local.png)
+4. The bot can be then tested locally using the Microsoft Bot Framework Emulator as can be seen below.
+![bot-local](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/screenshots/dova_local.png)
 
-Once tested locally, these modules are then pushed to Github and hosted on Azure App Service using CI/CD.
-![github-ci-cd](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/github_ci_cd.png)
+5. Once tested locally, these modules are then pushed to Github and hosted on Azure App Service using CI/CD.
+![github-ci-cd](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/screenshots/github_ci_cd.png)
 
-After deploying the bot on Azure App Service, the same can be tested using the 'Test in Web Chat' UI present on the Azure Portal.
-![test-webchat](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/dova_webchat.png)
+6. After deploying the bot on Azure App Service, the same can be tested using the 'Test in Web Chat' UI present on the Azure Portal.
+![test-webchat](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/screenshots/dova_webchat.png)
 
-Finally, the bot can be added to the Contoso Dentistry website and tested.
-![website-bot-test](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/website_bot_test.png)
+7. Finally, the bot can be added to the Contoso Dentistry website and tested.
+![website-bot-test](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/screenshots/website_bot_test.png)
 
 ### License
 
