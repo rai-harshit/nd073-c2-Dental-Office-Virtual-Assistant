@@ -1,0 +1,58 @@
+"use strict";
+/**
+ * @module adaptive-expressions
+ */
+/**
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+const expressionEvaluator_1 = require("../expressionEvaluator");
+const expressionType_1 = require("../expressionType");
+const functionUtils_1 = require("../functionUtils");
+const functionUtils_internal_1 = require("../functionUtils.internal");
+const returnType_1 = require("../returnType");
+/**
+ * Returns time of day for a given timestamp.
+ */
+class GetTimeOfDay extends expressionEvaluator_1.ExpressionEvaluator {
+    /**
+     * Initializes a new instance of the [GetTimeOfDay](xref:adaptive-expressions.GetTimeOfDay) class.
+     */
+    constructor() {
+        super(expressionType_1.ExpressionType.GetTimeOfDay, GetTimeOfDay.evaluator(), returnType_1.ReturnType.String, functionUtils_1.FunctionUtils.validateUnaryString);
+    }
+    /**
+     * @private
+     */
+    static evaluator() {
+        return functionUtils_1.FunctionUtils.applyWithError((args) => {
+            let value;
+            const error = functionUtils_internal_1.InternalFunctionUtils.verifyISOTimestamp(args[0]);
+            if (!error) {
+                const thisTime = new Date(args[0]).getUTCHours() * 100 + new Date(args[0]).getUTCMinutes();
+                if (thisTime === 0) {
+                    value = 'midnight';
+                }
+                else if (thisTime > 0 && thisTime < 1200) {
+                    value = 'morning';
+                }
+                else if (thisTime === 1200) {
+                    value = 'noon';
+                }
+                else if (thisTime > 1200 && thisTime < 1800) {
+                    value = 'afternoon';
+                }
+                else if (thisTime >= 1800 && thisTime <= 2200) {
+                    value = 'evening';
+                }
+                else if (thisTime > 2200 && thisTime <= 2359) {
+                    value = 'night';
+                }
+            }
+            return { value, error };
+        }, functionUtils_1.FunctionUtils.verifyString);
+    }
+}
+exports.GetTimeOfDay = GetTimeOfDay;
+//# sourceMappingURL=getTimeOfDay.js.map
