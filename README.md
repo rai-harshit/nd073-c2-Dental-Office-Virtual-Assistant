@@ -1,20 +1,14 @@
-# README Template
+# DOVA (Dental Office Virtual Assistant)
 
-Below is a template provided for use when building your README file for students.
-
-# Project Title
-
-Project description goes here.
+DOVA is a virtual assistant available for users visiting the [Contoso Dentistry website](https://zealous-pond-02c17e30f.azurestaticapps.net). It answers your general FAQs as well as informs you about the available slots and schedules appointments for the patients. 
 
 ## Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+This repository has been divided into multiple branches to isolate the codebase for independentally running CI/CD on multiple modules.
+1. [Chatbot](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/tree/chatbot)
+2. [Contoso Dentistry Website](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/tree/dentist-website)
+3. [Appointment Scheduler](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/tree/scheduler)
 
-### Dependencies
-
-```
-Examples here
-```
 
 ### Installation
 
