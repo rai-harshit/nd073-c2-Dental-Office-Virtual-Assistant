@@ -12,38 +12,25 @@ This repository has been divided into multiple branches to isolate the codebase 
 
 ### Installation
 
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
-
+The required NPM packages can be downloaded by typing the following command in the terminal
 ```
-Give an example here
+npm install
 ```
 
-## Testing
+### Testing
 
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
+To test the bot locally, make sure you download and install the Microsoft Bot Framework Emulator.
+Once the installation for required packages is complete, you can start the bot by typing the following command in the terminal
 ```
-Examples here
+npm start
 ```
+Now, start the Bot Framwork Emulator and click on the 'Open Bot' on the Welcome screen. In the Bot URL, type in the following link
+```
+http://localhost:3978/api/messages
+```
+Copy and paste the Microsoft App ID and Microsoft App Password from the .env file.
 
-## Project Instructions
 
-This section should contain all the student deliverables for this project.
-
-## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
-
-## License
+### License
 
 [License](LICENSE.txt)
