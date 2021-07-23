@@ -8,8 +8,7 @@
     "scripts": {
         "start": "node ./index.js",
         "watch": "nodemon ./index.js",
-        "lint": "eslint .",
-        "test": "echo \"Error: no test specified\""
+        "lint": "eslint ."
     },
     "repository": {
         "type": "git",
