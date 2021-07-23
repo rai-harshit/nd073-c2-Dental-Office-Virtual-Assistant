@@ -9,7 +9,7 @@ This repository has been divided into multiple branches to isolate the codebase 
 2. [Contoso Dentistry Website](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/tree/dentist-website)
 3. [Appointment Scheduler](https://github.com/rai-harshit/nd073-c2-Dental-Office-Virtual-Assistant/tree/scheduler)
 
-PS: The .yml file for each module is present in the respective branch. 
+The .yml file for each module is present in the respective branch. 
 
 ### Installation
 
